@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.comment {
+  margin: 0 auto 1rem auto;
+  background-color: green;
+  width: 40rem;
+  height: 10em;
+}
