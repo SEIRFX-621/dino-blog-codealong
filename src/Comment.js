@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState} from 'react';
 
-function Comment(props) {
+function Comment({body}) {
+  const [bodyValue, setBodyValue] = useState(body);
   return (
-    <>
-      <p class="comment">{props.body}</p>
-    </>
+    <div className="comment">
+      <p>{bodyValue}</p>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        setBodyValue(e.target.body.value);
+      }}>
+        <input name="body" type="text" placeholder={bodyValue} />
+        <button type="submit">Submit comment change</button>
+      </form>
+    </div>
   );
 }
 

@@ -43,3 +43,8 @@
   width: 40rem;
   height: 10em;
 }
+
+.edit-form input {
+  margin: 0 auto;
+  display: block;
+}

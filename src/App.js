@@ -8,7 +8,7 @@ function App() {
     title: 'Dinosaurs are awesome',
     author: 'Stealthy Stegosaurus',
     body: 'Check out this body property!',
-    comments: ['First', 'ScriptProcessorNode', 'third']
+    comments: ['First', 'Second', 'third']
   }
   return (
     <div className="App">
